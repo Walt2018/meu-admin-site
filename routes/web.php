@@ -26,7 +26,6 @@ Route::get("/posts",["App\Http\Controllers\Front\PagesController","allPosts"]);
 Route::get("/",["App\Http\Controllers\Front\HomeController","index"]);
 //single page
 Route::get("/pagina/{slug}",["App\Http\Controllers\Front\PagesController","index"]);
-
 //single service
 Route::get("/service/{slug}",["App\Http\Controllers\Front\PagesController","singleService"]);
 //all services
