@@ -18,7 +18,7 @@
                                 type="text">
                             <button
                                 class="btn text-color-light custom-text-4 font-weight-semibold custom-btn-with-arrow custom-btn-with-arrow-light"
-                                type="submit">Sign Up</button>
+                                type="submit">Assinar</button>
                         </div>
                     </form>
                 </div>
@@ -67,15 +67,15 @@
                                         <ul class="nav" id="footerNav">
                                             <li>
                                                 <a class="text-color-hover-primary font-weight-semibold custom-text-2 text-capitalize"
-                                                    href="demo-digital-agency-2-our-services.html">Our Services</a>
+                                                    href="demo-digital-agency-2-our-services.html">Nossos Serviços</a>
                                             </li>
                                             <li>
                                                 <a class="text-color-hover-primary font-weight-semibold custom-text-2 text-capitalize"
-                                                    href="demo-digital-agency-2-our-work.html">Our Work</a>
+                                                    href="demo-digital-agency-2-our-work.html">Nosso Trabalhos</a>
                                             </li>
                                             <li>
                                                 <a class="text-color-hover-primary font-weight-semibold custom-text-2 text-capitalize"
-                                                    href="demo-digital-agency-2-contact-us.html">Contact Us</a>
+                                                    href="demo-digital-agency-2-contact-us.html">Contato</a>
                                             </li>
                                         </ul>
                                     </nav>
@@ -103,7 +103,7 @@
             <div class="col-sm-12 col-lg-5 col-xl-6">
                 <div class="d-flex justify-content-end custom-footer-copywriting pt-5 mt-0 mt-lg-4">
                     <p class="mb-0 text-start text-lg-end d-block w-100 appear-animation" data-appear-animation="fadeIn"
-                        data-appear-animation-delay="300">Porto Digital Agency. © 2021. All Rights Reserved</p>
+                        data-appear-animation-delay="300">Scalavel. © 2021.Todo os direitos reservados.</p>
                 </div>
             </div>
         </div>
