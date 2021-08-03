@@ -6,7 +6,7 @@
                 <div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="100">
                     <h4 class="custom-font-primary custom-newsletter-title font-weight-bold mb-4 custom-text-7">Participe para atualizações da empresa</h4>
                     <div class="alert alert-success d-none" id="newsletterSuccess">
-                        <strong>Sucesso!</strong> You've been added to our email list.
+                        <strong>Sucesso!</strong> Seu email foi adicionado.
                     </div>
                     <div class="alert alert-danger d-none" id="newsletterError"></div>
                     <form id="newsletterForm" action="php/newsletter-subscribe.php" method="POST"
