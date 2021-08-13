@@ -145,9 +145,12 @@ return [
         ],
 
         'widgets' => [
-            'TCG\\Voyager\\Widgets\\UserDimmer',
-            'TCG\\Voyager\\Widgets\\PostDimmer',
-            'TCG\\Voyager\\Widgets\\PageDimmer',
+           // 'TCG\\Voyager\\Widgets\\UserDimmer',
+           // 'TCG\\Voyager\\Widgets\\PostDimmer',
+            //'TCG\\Voyager\\Widgets\\PageDimmer',
+            'App\\Widgets\\PostCustomDimmer',
+            'App\\Widgets\\PagesCustomDimmer',
+            'App\\Widgets\\PortfolioCustomDimmer',
         ],
 
     ],
@@ -191,6 +194,7 @@ return [
     // Here you can specify additional assets you would like to be included in the master.blade
     'additional_css' => [
         //'css/custom.css',
+        //'assets/css/skins/skin-digital-agency-2.css',
     ],
 
     'additional_js' => [

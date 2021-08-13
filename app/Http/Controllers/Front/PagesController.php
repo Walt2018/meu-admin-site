@@ -83,8 +83,8 @@ class PagesController extends Controller
 
     public function sendEmail(Request $request, AppMailer $mailer){
        // $mailer->sendContact($params);
-       echo $request->name;
-       echo $request->email;
+
+       $mailer->sendContact($request);
       // dd($request);
     }
 

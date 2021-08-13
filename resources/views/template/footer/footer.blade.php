@@ -14,7 +14,7 @@
                         <div class="input-group custom-newsletter">
                             <input
                                 class="form-control form-control-sm custom-newsletter-input rounded-0 bg-transparent border-0 ps-0 custom-text-2 text-color-light box-shadow-none"
-                                placeholder="Your E-mail Address" name="newsletterEmail" id="newsletterEmail"
+                                placeholder="Seu Endereço de e-mail" name="newsletterEmail" id="newsletterEmail"
                                 type="text">
                             <button
                                 class="btn text-color-light custom-text-4 font-weight-semibold custom-btn-with-arrow custom-btn-with-arrow-light"
@@ -25,20 +25,10 @@
             </div>
             <div class="col-sm-12 col-lg-6 col-xl-4 col-info-footer mt-4 mt-sm-5 mt-lg-0">
                 <div class="row">
-                    <div class="col-md-6">
-                        <span
-                            class="d-block text-start text-lg-end text-color-light font-weight-semibold text-5 pb-2 appear-animation"
-                            data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100">Los Angeles</span>
-                        <p class="mb-0 text-start text-lg-end text-4 font-weight-medium appear-animation"
-                            data-appear-animation="fadeInUpShorter" data-appear-animation-delay="150">123 The Main
-                            Street</p>
-                        <p class="mb-0 text-start text-lg-end text-4 font-weight-medium appear-animation"
-                            data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">goiania</p>
-                        <p class="mb-0 text-start text-lg-end text-4 font-weight-medium appear-animation"
-                            data-appear-animation="fadeInUpShorter" data-appear-animation-delay="250"><a
-                                href="tel:+1234567890" class="text-color-default">(123) 456-7890</a></p>
+                    <div class="col-md-12">
+                        {!! setting('site.endereco_footer') !!}
                     </div>
-                    <div class="col-md-6 mt-3 mt-md-0">
+                    {{-- <div class="col-md-6 mt-3 mt-md-0">
                         <span
                             class="d-block text-start text-lg-end text-color-light font-weight-semibold text-5 pb-2 appear-animation"
                             data-appear-animation="fadeInUpShorter" data-appear-animation-delay="100">New York</span>
@@ -51,7 +41,7 @@
                         <p class="mb-0 text-start text-lg-end text-4 font-weight-medium appear-animation"
                             data-appear-animation="fadeInUpShorter" data-appear-animation-delay="250"><a
                                 href="tel:+1234567890" class="text-color-default">(123) 456-7890</a></p>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>

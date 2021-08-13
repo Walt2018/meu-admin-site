@@ -59,7 +59,7 @@
                                 <article class="post post-medium border-0 pb-0 mb-5">
                                     <div class="post-image">
                                         <a href="{{ url('/post/' . $post->slug) }}">
-                                            <img src="{{url('assets/img/blog/medium/blog-1.jpg')}}" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="" />
+                                            <img src="{{ Voyager::image($post->image) }}" class="img-fluid img-thumbnail img-thumbnail-no-borders rounded-0" alt="" />
                                         </a>
                                     </div>
 
@@ -69,7 +69,7 @@
                                         <p>Euismod atras vulputate iltricies etri elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
 
                                         <div class="post-meta">
-                                            <span><i class="far fa-user"></i> Por <a href="#">Bob Doe</a> </span>
+                                            <span><i class="far fa-user"></i> Por <a href="#">Horácio Anaya</a> </span>
                                             <span><i class="far fa-folder"></i> <a href="#">{{$categoria}}</a> </span>
                                             <span class="d-block mt-2"><a href="{{ url('/post/' . $post->slug) }}" class="btn btn-xs btn-light text-1 text-uppercase">Leia Mais</a></span>
                                         </div>

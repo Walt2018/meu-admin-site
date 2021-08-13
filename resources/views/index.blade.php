@@ -17,8 +17,8 @@
     {{-- main --}}
     <div role="main" class="main">
 
-        <section class="section custom-circles-container section-angled bg-dark border-0 m-0 overlay overlay-op-9"
-            style="background-image: url({{ url('assets/img/demos/digital-agency-2/bg/bg-1.jpg') }}); background-size: cover; background-position: center;">
+        <section class="section custom-circles-container section-angled bg-dark border-0 m-0 overlay overlay-op-7"
+            style="background-image: url({{ Voyager::image(setting('site.imagem-banner-home')) }}); background-size: cover; background-position: center;">
             <span class="custom-circle custom-circle-1 bg-color-light custom-circle-blur appear-animation"
                 data-appear-animation="fadeInRightShorter" data-appear-animation-delay="100"
                 data-plugin-options="{'forceAnimation': true}"></span>
@@ -37,18 +37,9 @@
             <div class="section-angled-content h-100">
                 <div class="container pt-md-5 pb-lg-4 mt-5 mb-lg-5">
                     <div class="row pb-lg-5 mt-5 mb-lg-5">
-                        <div class="col-lg-7 pt-5 pt-md-0 pb-lg-5 mt-5 mb-md-5">
-                            <h2 class="custom-title-with-icon custom-title-with-icon-primary font-weight-normal text-color-default text-5 mb-0 appear-animation"
-                                data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="600">Bem-vindo à
-                                Era da Transformação Digital</h2>
-                            <h1 class="text-color-light font-weight-extra-bold text-10 text-md-12-13 line-height-2 mb-4 appear-animation"
-                                data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="850">Experiência em
-                                Design e Marketing Inteligente.</h1>
-                            <a href="#intro" data-hash data-hash-offset="100"
-                                class="btn btn-outline custom-btn-outline btn-primary rounded-0 font-weight-semibold text-color-light bg-color-hover-primary custom-btn-with-arrow text-4 btn-px-4 py-3 mt-2 appear-animation"
-                                data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="1100">Quero
-                                conhecer</a>
-                        </div>
+                        {{-- banner --}}
+                        {!! setting('site.banner_home') !!}
+                        {{-- banner --}}
                     </div>
                     <div class="spacer py-5 mt-lg-5 mb-md-5"></div>
                 </div>
@@ -58,96 +49,22 @@
         <section class="custom-cards p-relative mb-5 pb-5 z-index-2">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 col-custom-cards">
-                        <div class="card border-0 bg-color-dark rounded-0 z-index-1 p-5 appear-animation"
-                            data-appear-animation="maskUp" data-appear-animation-delay="100">
-                            <div class="card-body d-flex flex-column justify-content-center align-items-center p-0 my-3">
-                                <p>
-                                    <i class="icon-pie-chart icons" style="font-size: 80px;color:white"></i>
-                                </p>
-                                <h4 class="card-title custom-text-8 font-weight-bold text-color-light text-center mb-3">
-                                    Marketing de crescimento</h4>
-                                <p class="card-text text-center custom-text-4 font-weight-lighter">Lorem ipsum dolor sit
-                                    amet, consectetur adipiscing elit. Nunc viverra erat orci, ac auctor</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-custom-cards">
-                        <div class="card border-0 bg-color-primary rounded-0 z-index-1 p-5 appear-animation"
-                            data-appear-animation="maskUp" data-appear-animation-delay="200">
-                            <div class="card-body d-flex flex-column justify-content-center align-items-center p-0 my-3">
-                                <p>
-                                    <i class="icon-graph icons" style="font-size: 80px;color:white"></i>
-                                </p>
-                                <h4 class="card-title custom-text-8 font-weight-bold text-color-light text-center mb-3">
-                                    Estratégia</h4>
-                                <p class="card-text text-center custom-text-4 font-weight-lighter text-color-light">Lorem
-                                    ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra erat orci, ac auctor</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-custom-cards">
-                        <div class="card border-0 bg-color-dark rounded-0 z-index-1 p-5 appear-animation"
-                            data-appear-animation="maskUp" data-appear-animation-delay="300">
-                            <div class="card-body d-flex flex-column justify-content-center align-items-center p-0 my-3">
-                                <p>
-                                    <i class="icon-rocket icons" style="font-size: 80px;color:white"></i>
-                                </p>
-                                <h4 class="card-title custom-text-8 font-weight-bold text-color-light text-center mb-3">
-                                    Marketing Digital</h4>
-                                <p class="card-text text-center custom-text-4 font-weight-lighter">Lorem ipsum dolor sit
-                                    amet, consectetur adipiscing elit. Nunc viverra erat orci, ac auctor</p>
-                            </div>
-                        </div>
-                    </div>
+                    {{-- destaques home --}}
+                        {!! setting('site.destaques_home') !!}
+                    {{-- destaques home --}}
                 </div>
             </div>
         </section>
 
         <section class="our-approach py-5 mb-4 mb-xl-5 mt-4 mt-xl-0 p-relative z-index-1" id="intro">
             <div class="container">
+
                 <div class="row">
-                    <div class="col-lg-6 col-xl-4 d-flex flex-column justify-content-center align-items-start">
-                        <h4 class="custom-text-10 mb-4 pb-2 font-weight-bold custom-title-with-icon custom-title-with-icon-primary appear-animation"
-                            data-appear-animation="fadeInRightShorter" data-appear-animation-delay="100">Nossa Missão</h4>
-                        <p class="custom-font-tertiary custom-text-6 line-height-6 font-weight-medium appear-animation"
-                            data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">Lorem ipsum dolor
-                            sit amet, consectetur adipiscing elit. Morbi ut tellus ante. Nam suscipit urna risus.</p>
-                        <p class="custom-text-3 appear-animation" data-appear-animation="fadeInRightShorter"
-                            data-appear-animation-delay="400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                            imperdiet libero id nisi euismod, sed porta est consectetur.</p>
-                        <a herf="demo-digital-agency-2-dark-about-us.html"
-                            class="btn btn-outline custom-btn-outline btn-light border-0 rounded-0 text-color-primary custom-text-5 font-weight-bold custom-btn-with-arrow bg-transparent p-0 appear-animation"
-                            data-appear-animation="fadeInRightShorter" data-appear-animation-delay="600">Veja mais</a>
-                    </div>
-                    <div class="col-lg-4 py-4 py-lg-0">
-                        <div class="approach-img bg-color-dark">
-                            <div class="custom-circle custom-circle-1"></div>
-                            <div class="custom-circle custom-circle-2 bg-color-dark"></div>
-                            <span
-                                class="custom-circle custom-circle-our-approach-deco-1 bg-color-tertiary p-absolute d-block appear-animation"
-                                data-appear-animation="zoomIn" data-appear-animation-delay="100"></span>
-                            <span
-                                class="custom-circle custom-circle-our-approach-deco-2 bg-color-tertiary p-absolute d-block appear-animation"
-                                data-appear-animation="zoomIn" data-appear-animation-delay="100"></span>
-                            <span
-                                class="custom-circle custom-circle-our-approach-deco-3 bg-color-tertiary p-absolute d-block appear-animation"
-                                data-appear-animation="zoomIn" data-appear-animation-delay="100"></span>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xl-4 d-flex align-items-center mt-4 mt-lg-0">
-                        <ul class="custom-list list-unstyled ms-xl-2 ps-xl-1">
-                            <li class="font-weight-medium custom-text-4 mb-4 appear-animation"
-                                data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">Pellentesque
-                                ultricies nibh lorem ipsum</li>
-                            <li class="font-weight-medium custom-text-4 mb-4 appear-animation"
-                                data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400">Ultricies nibh
-                                pellen</li>
-                            <li class="font-weight-medium custom-text-4 appear-animation"
-                                data-appear-animation="fadeInRightShorter" data-appear-animation-delay="600">Pellentesque
-                                ultricies nibh</li>
-                        </ul>
-                    </div>
+
+                    {{-- missao home --}}
+                        {!! setting('site.missao_home') !!}
+                    {{-- missao home --}}
+
                 </div>
             </div>
         </section>
@@ -324,15 +241,15 @@
                         </p>
                         <h4 class="text-color-light font-weight-bold custom-text-10 appear-animation"
                             data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400">
-                            We’re interested in talking<br />
-                            about your business.
+                            Estamos interessados em conversar<br>
+                            sobre o seu negócio.
                         </h4>
                     </div>
                     <div
                         class="col-lg-4 d-flex align-items-center justify-content-start justify-content-lg-end mt-5 mt-lg-0">
                         <a herf="#"
                             class="btn btn-outline custom-btn-outline btn-light border-white rounded-0 px-4 py-3 text-color-light text-color-hover-dark bg-color-hover-light custom-text-6 line-height-6 font-weight-semibold custom-btn-with-arrow appear-animation"
-                            data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="600">Let’s Talk!</a>
+                            data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="600">Vamos lá!</a>
                     </div>
                 </div>
             </div>

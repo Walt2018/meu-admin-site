@@ -55,12 +55,12 @@
                     <div class="form-group col-lg-6"><input id="name" name="name" value="" type="text"
                             class="form-control py-4 px-4 rounded-0 text-color-quaternary bg-color-tertiary border-0 appear-animation"
                             required="" placeholder="Nome" data-msg-required="Por favor, digite seu nome."
-                            data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200" /></div>
+                            data-appear-animation="fadeInRightShorter" data-appear-animation-delay="0" /></div>
                     <div class="form-group col-lg-6"><input id="phone" name="phone" value="" type="text"
                             class="form-control py-4 px-4 rounded-0 text-color-quaternary bg-color-tertiary border-0 appear-animation"
                             required="" placeholder="Celular"
                             data-msg-required="Por favor, digite seu número de telefone."
-                            data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400" /></div>
+                            data-appear-animation="fadeInRightShorter" data-appear-animation-delay="0" /></div>
                 </div>
                 <div class="row">
                     <div class="form-group col-lg-6"><input id="email" name="email" value="" type="text"
@@ -71,14 +71,14 @@
                     <div class="form-group col-lg-6"><input id="subject" name="subject" value="" type="text"
                             class="form-control py-4 px-4 rounded-0 text-color-quaternary bg-color-tertiary border-0 appear-animation"
                             required="" placeholder="Assunto" data-msg-required="Por favor, digite o assunto."
-                            data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400" /></div>
+                            data-appear-animation="fadeInRightShorter" data-appear-animation-delay="0" /></div>
                 </div>
                 <div class="row">
                     <div class="form-group col"><textarea id="message"
                             class="form-control py-4 px-4 rounded-0 text-color-quaternary bg-color-tertiary border-0 appear-animation"
                             maxlength="5000" name="message" required="" rows="8" placeholder="Mensagem"
                             data-msg-required="Por favor, digite a mensagem."
-                            data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200"></textarea>
+                            data-appear-animation="fadeInRightShorter" data-appear-animation-delay="0"></textarea>
                     </div>
                 </div>
                 <div class="row">

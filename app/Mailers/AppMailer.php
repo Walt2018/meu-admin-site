@@ -58,13 +58,15 @@ class AppMailer {
         return $this->deliver();
     }
 
-    //envia email quando um usuario é criado
+    //envia email de contato
     public function sendContact($param)
     {
-        $this->to = $param->email;
+       $nome = $param->name;
+
+        $this->to = 'contato@scalavel.com';
         $this->subject = "Contato - $param->name";
-        $this->view = 'emails.ticket_create_user';
-        $this->data = compact('user','pass');
+        $this->view = 'template.emails.contact';
+        $this->data = compact('nome');
 
         return $this->deliver();
     }

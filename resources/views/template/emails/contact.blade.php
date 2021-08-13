@@ -6,7 +6,7 @@
 </head>
 <body>
     <p>
-        Olá {{ ucfirst($ticketOwner->name) }},
+        Olá, {{ ucfirst($nome) }},
     </p>
 </body>
 </html>
