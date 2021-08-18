@@ -194,11 +194,12 @@ return [
     // Here you can specify additional assets you would like to be included in the master.blade
     'additional_css' => [
         //'css/custom.css',
-        //'assets/css/skins/skin-digital-agency-2.css',
+       // 'assets/css/skins/skin-digital-agency-2.css',
     ],
 
     'additional_js' => [
-        //'js/custom.js',
+        //'https://cdn.tiny.cloud/1/xdvm4p3tqzm456z228y55euxucym4jzpussjpde28j1k17p6/tinymce/5/tinymce.min.js',
+        'assets/js/custom.js',
     ],
 
     'googlemaps' => [

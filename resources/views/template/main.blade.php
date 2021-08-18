@@ -84,6 +84,7 @@
 
 		<!-- Theme Initialization Files -->
 		<script src='{{url("assets/js/theme.init.js")}}'></script>
+
     @stack('js_scripts')
 </body>
 </html>
