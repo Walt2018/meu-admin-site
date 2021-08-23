@@ -11,7 +11,7 @@
 		{{-- <meta name="keywords" content="HTML5 Template" />
 		<meta name="description" content="Porto - Responsive HTML5 Template"> --}}
         @yield('head_front')
-		<meta name="author" content="okler.net">
+		<meta name="Walterson Gusmão" content="https://evolucyion.com.br">
 
 		<!-- Favicon -->
 		<link rel="shortcut icon" href="{{url('assets/img/favicon.ico')}}" type="image/x-icon" />
