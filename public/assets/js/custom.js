@@ -11,7 +11,7 @@ function tinymce_init_callback(editor) {
         plugins: 'link, image, code, table, textcolor, lists',
         extended_valid_elements: 'input[id|name|value|type|class|style|required|placeholder|autocomplete|onclick]',
         content_css: 'https://scalavel.com/assets/vendor/bootstrap/css/bootstrap.min.css,https://scalavel.com/assets/css/skins/skin-digital-agency-2.css,https://scalavel.com/assets/css/demos/demo-digital-agency-2-dark.css',
-        toolbar: 'styleselect bold italic underline | forecolor backcolor | alignleft aligncenter alignright | bullist numlist outdent indent | link image table | code | customInsertButton | novaLinhaMenu | limparMenu | paragrafoMenu',
+        toolbar: 'styleselect bold italic underline | forecolor backcolor | alignleft aligncenter alignright | bullist numlist outdent indent | link image table | code | customInsertButton | limparMenu | paragrafoMenu | removeformat',
         // formats: {
         //     // Changes the alignment buttons to add a class to each of the matching selector elements
         //     alignleft: { selector: 'div', classes: 'col' },
@@ -52,13 +52,120 @@ function tinymce_init_callback(editor) {
                 // node = editor.selection.getNode();
                 node = e.target;
                 //pega o id do el
-                console.log(e, e.target.id);
+                console.log(e,"ID el: ",e.target.id);
 
             });
 
             editor.addButton('customInsertButton', {
                 type: 'menubutton',
                 text: 'Colunas',
+                icon: 'insert-time',
+                menu: [{
+                    text: 'Linha 1 Coluna',
+                    onclick: function () {
+                        let ifrme = document.querySelectorAll("#richtextbody_ifr");
+                        let currHtml = ifrme[0].contentDocument.querySelector("#tinymce").innerHTML;
+
+                        let d = new Date();
+                        let idatec = d.getMonth() + d.getDate() + d.getMilliseconds();
+                        let idater = d.getMonth() + d.getDate() + d.getMilliseconds();
+                        let idatec1 = d.getMonth() + "-" + d.getDate() + "-" + d.getMilliseconds();
+
+                        //adiciona nova lina ao editor
+                        ifrme[0].contentDocument.querySelector("#tinymce").innerHTML = currHtml + "<div id='container" + idatec + "' class='container'> <div id='rowline" + idater + "' class='row py-5 p-xs-0'> "+
+                        "<div id='c11" + idatec1 + "' class='col-md-12 p-5'>"+
+                        "<h2>Título</h2>"+
+                        "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempus commodo sapien sit amet condimentum. Curabitur malesuada venenatis velit, in faucibus mi. Sed ac risus et nisi fermentum egestas. Cras nec erat quis mauris pretium scelerisque. Mauris euismod dui non nulla volutpat convallis. Maecenas malesuada congue sapien sit amet sodales. Nunc elementum consequat eros ut varius. Nulla et augue risus.</p>"+
+                        "</div> "+
+                        "</div>  </div>";
+
+                    }
+                },  {
+                    text: 'Linha 2 Colunas',
+                    onclick: function () {
+
+                        let ifrme = document.querySelectorAll("#richtextbody_ifr");
+                        let currHtml = ifrme[0].contentDocument.querySelector("#tinymce").innerHTML;
+
+                        let d = new Date();
+                        let idatec = d.getMonth() + d.getDate() + d.getMilliseconds();
+                        let idatec1 = d.getMonth() + "-" + d.getDate() + "-" + d.getMilliseconds();
+                        let idatec2 = d.getMonth() + d.getDate() + d.getMilliseconds();
+
+                         //adiciona nova lina ao editor
+                         ifrme[0].contentDocument.querySelector("#tinymce").innerHTML = currHtml + "<div id='container" + idatec + "' class='container'> <div id='rowline" + idatec + "' class='row py-5 p-xs-0'> "+
+                         "<div id='c21" + idatec1 + "' class='col-md-6 col-xs-12 p-5'>"+
+                         "<h2>Título</h2>"+
+                         "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempus commodo sapien sit amet condimentum. Curabitur malesuada venenatis velit, in faucibus mi. Sed ac risus et nisi fermentum egestas. Cras nec erat quis mauris pretium scelerisque. Mauris euismod dui non nulla volutpat convallis. Maecenas malesuada congue sapien sit amet sodales. Nunc elementum consequat eros ut varius. Nulla et augue risus.</p>"+
+                         "</div>"+
+                         "<div id='c22"+idatec2+"' class='col-md-6 col-xs-12 p-5'><h2>Título</h2>"+
+                         "<p>"+
+                         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempus commodo sapien sit amet condimentum. Curabitur malesuada venenatis velit, in faucibus mi. Sed ac risus et nisi fermentum egestas. Cras nec erat quis mauris pretium scelerisque. Mauris euismod dui non nulla volutpat convallis. Maecenas malesuada congue sapien sit amet sodales. Nunc elementum consequat eros ut varius. Nulla et augue risus."+
+                         "</p>"+
+                         "</div>"+
+                         "</div>  </div>";
+
+
+
+                    }
+                }, {
+                    text: 'Linha 3 Colunas',
+                    onclick: function () {
+                        let ifrme = document.querySelectorAll("#richtextbody_ifr");
+                        let currHtml = ifrme[0].contentDocument.querySelector("#tinymce").innerHTML;
+
+                        let d = new Date();
+                        let idatec = d.getMonth() + d.getDate() + d.getMilliseconds();
+                        let idatec1 = d.getMonth() + "-" + d.getDate() + "-" + d.getMilliseconds();
+                        let idatec2 = d.getMonth() + "-" + d.getDate() + "-" + d.getMilliseconds();
+                        let idatec3 = d.getMonth() + "-" + d.getDate() + "-" + d.getMilliseconds();
+
+                         //adiciona nova lina ao editor
+                         ifrme[0].contentDocument.querySelector("#tinymce").innerHTML = currHtml + "<div id='container" + idatec + "' class='container'> <div id='rowline" + idatec + "' class='row py-5 p-xs-0'> "+
+                         "<div id='c21" + idatec1 + "' class='col-md-4 col-xs-12 p-5'>"+
+                         "<h2>Título</h2>"+
+                         "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempus commodo sapien sit amet condimentum. Curabitur malesuada venenatis velit, in faucibus mi. Sed ac risus et nisi fermentum egestas. Cras nec erat quis mauris pretium scelerisque. Mauris euismod dui non nulla volutpat convallis. Maecenas malesuada congue sapien sit amet sodales. Nunc elementum consequat eros ut varius. Nulla et augue risus.</p>"+
+                         "</div>"+
+                         "<div id='c22"+idatec2+"' class='col-md-4 col-xs-12 p-5'><h2>Título</h2>"+
+                         "<p>"+
+                         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempus commodo sapien sit amet condimentum. Curabitur malesuada venenatis velit, in faucibus mi. Sed ac risus et nisi fermentum egestas. Cras nec erat quis mauris pretium scelerisque. Mauris euismod dui non nulla volutpat convallis. Maecenas malesuada congue sapien sit amet sodales. Nunc elementum consequat eros ut varius. Nulla et augue risus."+
+                         "</p>"+
+                         "</div>"+
+                         "<div id='c22"+idatec3+"' class='col-md-4 col-xs-12 p-5'><h2>Título</h2>"+
+                         "<p>"+
+                         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tempus commodo sapien sit amet condimentum. Curabitur malesuada venenatis velit, in faucibus mi. Sed ac risus et nisi fermentum egestas. Cras nec erat quis mauris pretium scelerisque. Mauris euismod dui non nulla volutpat convallis. Maecenas malesuada congue sapien sit amet sodales. Nunc elementum consequat eros ut varius. Nulla et augue risus."+
+                         "</p>"+
+                         "</div>"+
+                         "</div>  </div>";
+
+                        // editor.insertContent("<div id='c13" + idatec1 + "'  class='col-md-4 col-xs-12 py-5'> Coluna1  </div> <div id='c23" + idatec2 + "' class='col-md-4 col-xs-12 py-5'> Coluna2  </div> <div id='c33" + idatec3 + "' class='col-md-4 col-xs-12 py-5'> Coluna3  </div>");
+
+                    }
+                }, {
+                    text: '4 Colunas',
+                    onclick: function () {
+                        let d = new Date();
+                        let idatec1 = d.getMonth() + "-" + d.getDate() + "-" + d.getMilliseconds();
+                        let idatec2 = d.getMonth() + "-" + d.getDate() + "-" + d.getMilliseconds();
+                        let idatec3 = d.getMonth() + "-" + d.getDate() + "-" + d.getMilliseconds();
+                        let idatec4 = d.getMonth() + "-" + d.getDate() + "-" + d.getMilliseconds();
+                        editor.insertContent("<div id='" + idatec1 + "' class='col-md-3 col-xs-12 py-5'> Coluna1  </div> <div id='" + idatec2 + "' class='col-md-3 col-xs-12 py-5'> Coluna2  </div> <div id='" + idatec3 + "' class='col-md-3 col-xs-12 py-5'> Coluna3  </div> <div id='" + idatec4 + "' class='col-md-3 col-xs-12 py-5'> Coluna4  </div>");
+                    }
+                },
+                {
+                    text: 'Limpar',
+                    onclick: function () {
+                        let ifrme = document.querySelectorAll("#richtextbody_ifr");
+                        //limpa o editor
+                        ifrme[0].contentDocument.querySelector("#tinymce").innerHTML = "";
+                        //editor.insertContent("&ensp;");
+                    }
+                }]
+            });
+
+            editor.addButton('templatesInsertButton', {
+                type: 'menubutton',
+                text: 'Templates/Blocos',
                 icon: false,
                 menu: [{
                     text: 'Linha',
